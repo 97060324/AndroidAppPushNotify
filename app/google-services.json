@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "18932425363",
+    "firebase_url": "https://verkeersborden-18e15.firebaseio.com",
+    "project_id": "verkeersborden-18e15",
+    "storage_bucket": "verkeersborden-18e15.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18932425363:android:a223cf7b902890a4b42366",
+        "android_client_info": {
+          "package_name": "nl.lensmedia.verkeersborden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18932425363-pb69p8htoubgt68n0fd26nr3gcp5l1mb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABvsUDGoaFtD4sjVaOAiLKn2LDW5cY84s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18932425363-pb69p8htoubgt68n0fd26nr3gcp5l1mb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

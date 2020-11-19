@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Verkeersborden</string>
+    <string name="notification_channel_id">nl.lensmedia.verkeersborden.test</string>
+
+</resources>
