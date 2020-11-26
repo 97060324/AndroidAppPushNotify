@@ -2,10 +2,9 @@ package nl.lensmedia.verkeersborden;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.view.WindowManager;
 
 
 public class MainActivity extends AppCompatActivity implements Runnable{
@@ -14,20 +13,15 @@ public class MainActivity extends AppCompatActivity implements Runnable{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_main);
 
         mThread = new Thread(this);
 
         mThread.start();
 
-        // Hide the status bar
-        View decorView = getWindow().getDecorView();
-        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
-        decorView.setSystemUiVisibility(uiOptions);
-
-        // If the status bar is not hidden, hide that too.
-        ActionBar actionBar = getActionBar();
-        if(actionBar != null) actionBar.hide();
     }
 
     // SplashScreen

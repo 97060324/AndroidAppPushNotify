@@ -3,6 +3,7 @@ package nl.lensmedia.verkeersborden;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -21,6 +22,8 @@ public class SecondActivity extends AppCompatActivity{
     {
         super.onCreate(savedInstanceState);
 
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         setContentView(R.layout.activity_second);
 
         mWebView = (WebView) findViewById(R.id.WebView);
@@ -32,7 +35,7 @@ public class SecondActivity extends AppCompatActivity{
         webSettings.setJavaScriptEnabled(true);
 
         // Enable local storage
-        webSettings.setDomStorageEnabled(true);
+        //webSettings.setDomStorageEnabled(true);
 
         //webSettings.setLoadWithOverviewMode(true);
         //webSettings.setUseWideViewPort(true);
